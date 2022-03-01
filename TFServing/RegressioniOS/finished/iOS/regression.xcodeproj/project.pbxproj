@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F113F44D1D6744B087D16C7 /* Pods_regression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8E46273F1EE660E7C58099 /* Pods_regression.framework */; };
+		FDBDBBD427C620D8001AB43F /* function.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBB827C620D8001AB43F /* function.pb.swift */; };
+		FDBDBBD527C620D8001AB43F /* example.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBB927C620D8001AB43F /* example.pb.swift */; };
+		FDBDBBD627C620D8001AB43F /* get_model_metadata.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBBA27C620D8001AB43F /* get_model_metadata.pb.swift */; };
+		FDBDBBD727C620D8001AB43F /* resource_handle.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBBB27C620D8001AB43F /* resource_handle.pb.swift */; };
+		FDBDBBD827C620D8001AB43F /* node_def.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBBC27C620D8001AB43F /* node_def.pb.swift */; };
+		FDBDBBD927C620D8001AB43F /* saver.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBBD27C620D8001AB43F /* saver.pb.swift */; };
+		FDBDBBDA27C620D8001AB43F /* tensor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBBE27C620D8001AB43F /* tensor.pb.swift */; };
+		FDBDBBDB27C620D8001AB43F /* feature.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBBF27C620D8001AB43F /* feature.pb.swift */; };
+		FDBDBBDC27C620D8001AB43F /* types.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC027C620D8001AB43F /* types.pb.swift */; };
+		FDBDBBDD27C620D8001AB43F /* trackable_object_graph.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC127C620D8001AB43F /* trackable_object_graph.pb.swift */; };
+		FDBDBBDE27C620D8001AB43F /* prediction_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC227C620D8001AB43F /* prediction_service.pb.swift */; };
+		FDBDBBDF27C620D8001AB43F /* full_type.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC327C620D8001AB43F /* full_type.pb.swift */; };
+		FDBDBBE027C620D8001AB43F /* versions.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC427C620D8001AB43F /* versions.pb.swift */; };
+		FDBDBBE127C620D8001AB43F /* predict.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC527C620D8001AB43F /* predict.pb.swift */; };
+		FDBDBBE227C620D8001AB43F /* input.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC627C620D8001AB43F /* input.pb.swift */; };
+		FDBDBBE327C620D8001AB43F /* attr_value.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC727C620D8001AB43F /* attr_value.pb.swift */; };
+		FDBDBBE427C620D8001AB43F /* saved_object_graph.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC827C620D8001AB43F /* saved_object_graph.pb.swift */; };
+		FDBDBBE527C620D8001AB43F /* classification.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBC927C620D8001AB43F /* classification.pb.swift */; };
+		FDBDBBE627C620D8001AB43F /* regression.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBCA27C620D8001AB43F /* regression.pb.swift */; };
+		FDBDBBE727C620D8001AB43F /* variable.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBCB27C620D8001AB43F /* variable.pb.swift */; };
+		FDBDBBE827C620D8001AB43F /* struct.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBCC27C620D8001AB43F /* struct.pb.swift */; };
+		FDBDBBE927C620D8001AB43F /* model.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBCD27C620D8001AB43F /* model.pb.swift */; };
+		FDBDBBEA27C620D8001AB43F /* op_def.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBCE27C620D8001AB43F /* op_def.pb.swift */; };
+		FDBDBBEB27C620D8001AB43F /* tensor_shape.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBCF27C620D8001AB43F /* tensor_shape.pb.swift */; };
+		FDBDBBEC27C620D8001AB43F /* prediction_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBD027C620D8001AB43F /* prediction_service.grpc.swift */; };
+		FDBDBBED27C620D8001AB43F /* graph.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBD127C620D8001AB43F /* graph.pb.swift */; };
+		FDBDBBEE27C620D8001AB43F /* meta_graph.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBD227C620D8001AB43F /* meta_graph.pb.swift */; };
+		FDBDBBEF27C620D8001AB43F /* inference.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDBBD327C620D8001AB43F /* inference.pb.swift */; };
+		FDBE867927A3C8B500974118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE867827A3C8B500974118 /* AppDelegate.swift */; };
+		FDBE867B27A3C8B500974118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE867A27A3C8B500974118 /* SceneDelegate.swift */; };
+		FDBE867D27A3C8B500974118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE867C27A3C8B500974118 /* ViewController.swift */; };
+		FDBE868027A3C8B500974118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBE867E27A3C8B500974118 /* Main.storyboard */; };
+		FDBE868227A3C8B700974118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBE868127A3C8B700974118 /* Assets.xcassets */; };
+		FDBE868527A3C8B700974118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBE868327A3C8B700974118 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D8E46273F1EE660E7C58099 /* Pods_regression.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_regression.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB86ACA8F2DD75B44A51632E /* Pods-regression.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-regression.release.xcconfig"; path = "Target Support Files/Pods-regression/Pods-regression.release.xcconfig"; sourceTree = "<group>"; };
+		B25546DF622061E98BA8BD97 /* Pods-regression.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-regression.debug.xcconfig"; path = "Target Support Files/Pods-regression/Pods-regression.debug.xcconfig"; sourceTree = "<group>"; };
+		FDBDBBB827C620D8001AB43F /* function.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = function.pb.swift; path = proto/generated/import/function.pb.swift; sourceTree = "<group>"; };
+		FDBDBBB927C620D8001AB43F /* example.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = example.pb.swift; path = proto/generated/import/example.pb.swift; sourceTree = "<group>"; };
+		FDBDBBBA27C620D8001AB43F /* get_model_metadata.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = get_model_metadata.pb.swift; path = proto/generated/import/get_model_metadata.pb.swift; sourceTree = "<group>"; };
+		FDBDBBBB27C620D8001AB43F /* resource_handle.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resource_handle.pb.swift; path = proto/generated/import/resource_handle.pb.swift; sourceTree = "<group>"; };
+		FDBDBBBC27C620D8001AB43F /* node_def.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = node_def.pb.swift; path = proto/generated/import/node_def.pb.swift; sourceTree = "<group>"; };
+		FDBDBBBD27C620D8001AB43F /* saver.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = saver.pb.swift; path = proto/generated/import/saver.pb.swift; sourceTree = "<group>"; };
+		FDBDBBBE27C620D8001AB43F /* tensor.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tensor.pb.swift; path = proto/generated/import/tensor.pb.swift; sourceTree = "<group>"; };
+		FDBDBBBF27C620D8001AB43F /* feature.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = feature.pb.swift; path = proto/generated/import/feature.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC027C620D8001AB43F /* types.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = types.pb.swift; path = proto/generated/import/types.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC127C620D8001AB43F /* trackable_object_graph.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = trackable_object_graph.pb.swift; path = proto/generated/import/trackable_object_graph.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC227C620D8001AB43F /* prediction_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = prediction_service.pb.swift; path = proto/generated/import/prediction_service.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC327C620D8001AB43F /* full_type.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = full_type.pb.swift; path = proto/generated/import/full_type.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC427C620D8001AB43F /* versions.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = versions.pb.swift; path = proto/generated/import/versions.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC527C620D8001AB43F /* predict.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = predict.pb.swift; path = proto/generated/import/predict.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC627C620D8001AB43F /* input.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = input.pb.swift; path = proto/generated/import/input.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC727C620D8001AB43F /* attr_value.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = attr_value.pb.swift; path = proto/generated/import/attr_value.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC827C620D8001AB43F /* saved_object_graph.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = saved_object_graph.pb.swift; path = proto/generated/import/saved_object_graph.pb.swift; sourceTree = "<group>"; };
+		FDBDBBC927C620D8001AB43F /* classification.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = classification.pb.swift; path = proto/generated/import/classification.pb.swift; sourceTree = "<group>"; };
+		FDBDBBCA27C620D8001AB43F /* regression.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = regression.pb.swift; path = proto/generated/import/regression.pb.swift; sourceTree = "<group>"; };
+		FDBDBBCB27C620D8001AB43F /* variable.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = variable.pb.swift; path = proto/generated/import/variable.pb.swift; sourceTree = "<group>"; };
+		FDBDBBCC27C620D8001AB43F /* struct.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = struct.pb.swift; path = proto/generated/import/struct.pb.swift; sourceTree = "<group>"; };
+		FDBDBBCD27C620D8001AB43F /* model.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = model.pb.swift; path = proto/generated/import/model.pb.swift; sourceTree = "<group>"; };
+		FDBDBBCE27C620D8001AB43F /* op_def.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = op_def.pb.swift; path = proto/generated/import/op_def.pb.swift; sourceTree = "<group>"; };
+		FDBDBBCF27C620D8001AB43F /* tensor_shape.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tensor_shape.pb.swift; path = proto/generated/import/tensor_shape.pb.swift; sourceTree = "<group>"; };
+		FDBDBBD027C620D8001AB43F /* prediction_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = prediction_service.grpc.swift; path = proto/generated/import/prediction_service.grpc.swift; sourceTree = "<group>"; };
+		FDBDBBD127C620D8001AB43F /* graph.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = graph.pb.swift; path = proto/generated/import/graph.pb.swift; sourceTree = "<group>"; };
+		FDBDBBD227C620D8001AB43F /* meta_graph.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = meta_graph.pb.swift; path = proto/generated/import/meta_graph.pb.swift; sourceTree = "<group>"; };
+		FDBDBBD327C620D8001AB43F /* inference.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = inference.pb.swift; path = proto/generated/import/inference.pb.swift; sourceTree = "<group>"; };
+		FDBE867527A3C8B500974118 /* regression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = regression.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBE867827A3C8B500974118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDBE867A27A3C8B500974118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDBE867C27A3C8B500974118 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDBE867F27A3C8B500974118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDBE868127A3C8B700974118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDBE868427A3C8B700974118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDBE868627A3C8B700974118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDBE868C27A3D21E00974118 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDBE867227A3C8B500974118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F113F44D1D6744B087D16C7 /* Pods_regression.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D0BAF388075951B9C3C3757 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B25546DF622061E98BA8BD97 /* Pods-regression.debug.xcconfig */,
+				AB86ACA8F2DD75B44A51632E /* Pods-regression.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9D9267E0E1DE645AE0E45B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D8E46273F1EE660E7C58099 /* Pods_regression.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDBE866C27A3C8B500974118 = {
+			isa = PBXGroup;
+			children = (
+				FDBE867727A3C8B500974118 /* regression */,
+				FDBE867627A3C8B500974118 /* Products */,
+				5D0BAF388075951B9C3C3757 /* Pods */,
+				B9D9267E0E1DE645AE0E45B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDBE867627A3C8B500974118 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE867527A3C8B500974118 /* regression.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDBE867727A3C8B500974118 /* regression */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE867827A3C8B500974118 /* AppDelegate.swift */,
+				FDBE867A27A3C8B500974118 /* SceneDelegate.swift */,
+				FDBE867C27A3C8B500974118 /* ViewController.swift */,
+				FDBDBBC727C620D8001AB43F /* attr_value.pb.swift */,
+				FDBDBBC927C620D8001AB43F /* classification.pb.swift */,
+				FDBDBBB927C620D8001AB43F /* example.pb.swift */,
+				FDBDBBBF27C620D8001AB43F /* feature.pb.swift */,
+				FDBDBBC327C620D8001AB43F /* full_type.pb.swift */,
+				FDBDBBB827C620D8001AB43F /* function.pb.swift */,
+				FDBDBBBA27C620D8001AB43F /* get_model_metadata.pb.swift */,
+				FDBDBBD127C620D8001AB43F /* graph.pb.swift */,
+				FDBDBBD327C620D8001AB43F /* inference.pb.swift */,
+				FDBDBBC627C620D8001AB43F /* input.pb.swift */,
+				FDBDBBD227C620D8001AB43F /* meta_graph.pb.swift */,
+				FDBDBBCD27C620D8001AB43F /* model.pb.swift */,
+				FDBDBBBC27C620D8001AB43F /* node_def.pb.swift */,
+				FDBDBBCE27C620D8001AB43F /* op_def.pb.swift */,
+				FDBDBBC527C620D8001AB43F /* predict.pb.swift */,
+				FDBDBBD027C620D8001AB43F /* prediction_service.grpc.swift */,
+				FDBDBBC227C620D8001AB43F /* prediction_service.pb.swift */,
+				FDBDBBCA27C620D8001AB43F /* regression.pb.swift */,
+				FDBDBBBB27C620D8001AB43F /* resource_handle.pb.swift */,
+				FDBDBBC827C620D8001AB43F /* saved_object_graph.pb.swift */,
+				FDBDBBBD27C620D8001AB43F /* saver.pb.swift */,
+				FDBDBBCC27C620D8001AB43F /* struct.pb.swift */,
+				FDBDBBCF27C620D8001AB43F /* tensor_shape.pb.swift */,
+				FDBDBBBE27C620D8001AB43F /* tensor.pb.swift */,
+				FDBDBBC127C620D8001AB43F /* trackable_object_graph.pb.swift */,
+				FDBDBBC027C620D8001AB43F /* types.pb.swift */,
+				FDBDBBCB27C620D8001AB43F /* variable.pb.swift */,
+				FDBDBBC427C620D8001AB43F /* versions.pb.swift */,
+				FDBE867E27A3C8B500974118 /* Main.storyboard */,
+				FDBE868127A3C8B700974118 /* Assets.xcassets */,
+				FDBE868327A3C8B700974118 /* LaunchScreen.storyboard */,
+				FDBE868627A3C8B700974118 /* Info.plist */,
+				FDBE868C27A3D21E00974118 /* README.md */,
+			);
+			path = regression;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDBE867427A3C8B500974118 /* regression */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDBE868927A3C8B700974118 /* Build configuration list for PBXNativeTarget "regression" */;
+			buildPhases = (
+				78CC01C7A0A68311684B6240 /* [CP] Check Pods Manifest.lock */,
+				FDBE867127A3C8B500974118 /* Sources */,
+				FDBE867227A3C8B500974118 /* Frameworks */,
+				FDBE867327A3C8B500974118 /* Resources */,
+				DD43BBB7633255930FAFBF7A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = regression;
+			productName = regression;
+			productReference = FDBE867527A3C8B500974118 /* regression.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDBE866D27A3C8B500974118 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FDBE867427A3C8B500974118 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FDBE867027A3C8B500974118 /* Build configuration list for PBXProject "regression" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDBE866C27A3C8B500974118;
+			productRefGroup = FDBE867627A3C8B500974118 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDBE867427A3C8B500974118 /* regression */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDBE867327A3C8B500974118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBE868527A3C8B700974118 /* LaunchScreen.storyboard in Resources */,
+				FDBE868227A3C8B700974118 /* Assets.xcassets in Resources */,
+				FDBE868027A3C8B500974118 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78CC01C7A0A68311684B6240 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-regression-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD43BBB7633255930FAFBF7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-regression/Pods-regression-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-regression/Pods-regression-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-regression/Pods-regression-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDBE867127A3C8B500974118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBDBBE727C620D8001AB43F /* variable.pb.swift in Sources */,
+				FDBDBBD827C620D8001AB43F /* node_def.pb.swift in Sources */,
+				FDBDBBDF27C620D8001AB43F /* full_type.pb.swift in Sources */,
+				FDBDBBDE27C620D8001AB43F /* prediction_service.pb.swift in Sources */,
+				FDBDBBDD27C620D8001AB43F /* trackable_object_graph.pb.swift in Sources */,
+				FDBDBBE127C620D8001AB43F /* predict.pb.swift in Sources */,
+				FDBDBBE227C620D8001AB43F /* input.pb.swift in Sources */,
+				FDBDBBEC27C620D8001AB43F /* prediction_service.grpc.swift in Sources */,
+				FDBDBBEA27C620D8001AB43F /* op_def.pb.swift in Sources */,
+				FDBDBBDB27C620D8001AB43F /* feature.pb.swift in Sources */,
+				FDBDBBEF27C620D8001AB43F /* inference.pb.swift in Sources */,
+				FDBDBBEE27C620D8001AB43F /* meta_graph.pb.swift in Sources */,
+				FDBDBBE027C620D8001AB43F /* versions.pb.swift in Sources */,
+				FDBDBBDC27C620D8001AB43F /* types.pb.swift in Sources */,
+				FDBE867D27A3C8B500974118 /* ViewController.swift in Sources */,
+				FDBDBBD727C620D8001AB43F /* resource_handle.pb.swift in Sources */,
+				FDBDBBE327C620D8001AB43F /* attr_value.pb.swift in Sources */,
+				FDBDBBE427C620D8001AB43F /* saved_object_graph.pb.swift in Sources */,
+				FDBDBBEB27C620D8001AB43F /* tensor_shape.pb.swift in Sources */,
+				FDBDBBED27C620D8001AB43F /* graph.pb.swift in Sources */,
+				FDBDBBE527C620D8001AB43F /* classification.pb.swift in Sources */,
+				FDBDBBE827C620D8001AB43F /* struct.pb.swift in Sources */,
+				FDBDBBE927C620D8001AB43F /* model.pb.swift in Sources */,
+				FDBE867927A3C8B500974118 /* AppDelegate.swift in Sources */,
+				FDBDBBD427C620D8001AB43F /* function.pb.swift in Sources */,
+				FDBDBBD527C620D8001AB43F /* example.pb.swift in Sources */,
+				FDBDBBD627C620D8001AB43F /* get_model_metadata.pb.swift in Sources */,
+				FDBE867B27A3C8B500974118 /* SceneDelegate.swift in Sources */,
+				FDBDBBE627C620D8001AB43F /* regression.pb.swift in Sources */,
+				FDBDBBD927C620D8001AB43F /* saver.pb.swift in Sources */,
+				FDBDBBDA27C620D8001AB43F /* tensor.pb.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDBE867E27A3C8B500974118 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDBE867F27A3C8B500974118 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDBE868327A3C8B700974118 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDBE868427A3C8B700974118 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDBE868727A3C8B700974118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDBE868827A3C8B700974118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDBE868A27A3C8B700974118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25546DF622061E98BA8BD97 /* Pods-regression.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = regression/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tensorflow.serving.examples.regression;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDBE868B27A3C8B700974118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB86ACA8F2DD75B44A51632E /* Pods-regression.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = regression/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tensorflow.serving.examples.regression;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDBE867027A3C8B500974118 /* Build configuration list for PBXProject "regression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBE868727A3C8B700974118 /* Debug */,
+				FDBE868827A3C8B700974118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDBE868927A3C8B700974118 /* Build configuration list for PBXNativeTarget "regression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBE868A27A3C8B700974118 /* Debug */,
+				FDBE868B27A3C8B700974118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDBE866D27A3C8B500974118 /* Project object */;
+}
