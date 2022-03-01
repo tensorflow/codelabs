@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TensorFlow Serving JavaScript demo</title>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <img src="cat.jpg" id="image" alt="image">
+        <div>
+            <input type="radio" name="connection_mode" value="REST"> REST<br>
+            <input type="radio" name="connection_mode" value="gRPC" checked> gRPC<br>
+        </div>
+        <p><button type="button" onclick="window.classify_img();">Classify</button>        
+            <button type="button" onclick="window.reset();">Reset</button></p>
+        <p id="category"></p>
+    </body>
+</html>
