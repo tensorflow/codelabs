@@ -53,7 +53,7 @@ function classify_img(){
         xhr.onload = () => {
             const response = JSON.parse(xhr.responseText);
             const maxIndex = argmax(response['predictions'][0])
-            document.getElementById('category').textContent = 'Result: ' + maxIndex;
+            document.getElementById('category').textContent = 'Predicted category: ' + maxIndex;
         }
         xhr.onerror = () => {
             console.log('REST request error');
@@ -106,7 +106,7 @@ function classify_img(){
             } 
             else {
                 const maxIndex = argmax(response.getOutputsMap().get('logits').getFloatValList());
-                document.getElementById('category').textContent = 'Result: ' + maxIndex;
+                document.getElementById('category').textContent = 'Predicted category: ' + maxIndex;
             }
         });
     }

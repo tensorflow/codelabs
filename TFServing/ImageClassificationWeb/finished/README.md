@@ -11,7 +11,7 @@ model, which classifies the input image.
 2. Start TF Serving with:
 `docker run -t --rm -p 8501:8501 -p 8500:8500 -v "/PATH/TO/SAVEDMODEL:/models/inception" -e MODEL_NAME=inception tensorflow/serving`
 3. Start Envoy:
-`docker run -add-host host.docker.internal:host-gateway --rm -it -p 9901:9901 -p 8080:8080 -v PATH/TO/envoy-custom.yaml:/envoy-custom.yaml envoyproxy/envoy-dev:fd3e8370ddb7a96634c192d1461516e6de1d1797 -c /envoy-custom.yaml`
+`docker run --add-host host.docker.internal:host-gateway --rm -it -p 9901:9901 -p 8080:8080 -v PATH/TO/envoy-custom.yaml:/envoy-custom.yaml envoyproxy/envoy-dev:fd3e8370ddb7a96634c192d1461516e6de1d1797 -c /envoy-custom.yaml`
 4. Install [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) 
    extension and start a web server to load the folder that contains 
    index.html. Leave the default port at 8887. 

@@ -28,10 +28,12 @@ function classify_img(){
     
     if (radioButtons[0].checked) {
         console.log('Using REST');
+        // TODO: add code to send a REST request to TF Serving
 
     } 
     else {
         console.log('Using gRPC');
+        // TODO: add code to send an gRPC request to TF Serving
 
     }
 }
