@@ -33,7 +33,7 @@ function classify_img(){
     } 
     else {
         console.log('Using gRPC');
-        // TODO: add code to send an gRPC request to TF Serving
+        // TODO: add code to send a gRPC request to TF Serving
 
     }
 }
