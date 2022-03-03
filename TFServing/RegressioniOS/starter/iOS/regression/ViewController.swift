@@ -46,10 +46,12 @@ class ViewController: UIViewController {
     func doInference(value:Double){
         if (connectionMode[picker.selectedRow(inComponent: 0)] == "REST") {
             print("Using REST")
-
+            // TODO: add code to send a REST request to TF Serving
+            
         }
         else {
             print("Using gRPC")
+            // TODO: add code to send a gRPC request to TF Serving
             
         }
     }
