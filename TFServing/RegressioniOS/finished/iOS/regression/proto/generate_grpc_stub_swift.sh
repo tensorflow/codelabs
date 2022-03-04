@@ -1,3 +1,6 @@
+#!/bin/bash
+# This script generates the client stub for TF Serving
+
 touch generated
 rm -rf generated
 mkdir -p generated/import
