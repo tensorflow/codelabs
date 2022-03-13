@@ -19,7 +19,7 @@ To run the app:
 and extract it to a versioned folder
 2. Start TF Serving using:
 ```
-docker run -it --rm -p 8500:8500 -p 8501:8501 -v "PATH/TO/SAVEDMODEL:/models/ssd_mobilenet" -e MODEL_NAME=ssd_mobilenet tensorflow/serving
+docker run -it --rm -p 8500:8500 -p 8501:8501 -v "PATH/TO/SAVEDMODEL:/models/ssd_mobilenet_v2_2" -e MODEL_NAME=ssd_mobilenet_v2_2 tensorflow/serving
 ```
 3. Run the app in Android Studio
 4. If you are not using an Android emulator, make sure to replace '10.0.2.2'
