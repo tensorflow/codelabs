@@ -1,0 +1,207 @@
+ {
+  "project": {
+    "name": "Colab",
+    "id": "_",
+    "creationTs": 1680630387846,
+    "lastModifiedTs": 1680649623261
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "string_picker_vpr4wc",
+        "displayLabel": "News category",
+        "nodeSpecId": "string_picker",
+        "customData": {
+          "initialWidth": 304,
+          "initialHeight": 144,
+          "previewX": 16,
+          "previewY": 16,
+          "previewWidth": 160,
+          "previewHeight": 112
+        },
+        "uiData": {
+          "posX": -160,
+          "posY": 16,
+          "width": 208,
+          "selected": false
+        },
+        "propValues": {
+          "options": "business\nentertainment\nenvironment\nfood\nhealth\npolitics\nscience\nsports\ntechnology\ntop\ntourism\nworld",
+          "hidePreview": false
+        }
+      },
+      {
+        "id": "text_processor_lmbd9a",
+        "displayLabel": "Build news API url",
+        "nodeSpecId": "text_processor",
+        "customData": {
+          "initialWidth": 304,
+          "initialHeight": 288,
+          "previewX": 16,
+          "previewY": 144,
+          "previewWidth": 160,
+          "previewHeight": 240
+        },
+        "uiData": {
+          "posX": 96,
+          "posY": 16,
+          "width": 176,
+          "selected": false
+        },
+        "propValues": {
+          "mode": "format",
+          "separator": "\\n",
+          "formatString": "https://newsdata.io/api/1/news?apikey=pub_200355507c0c996503d78f64de4123230b376&country=us&language=en&category={1}",
+          "hidePreview": false
+        },
+        "inputValues": {
+          "texts": []
+        },
+        "incomingEdges": {
+          "texts": [
+            {
+              "sourceNodeId": "string_picker_vpr4wc",
+              "outputId": "selectedText"
+            }
+          ]
+        }
+      },
+      {
+        "id": "custom_api_3bw8p9",
+        "displayLabel": "Get news",
+        "nodeSpecId": "custom_api",
+        "customData": {
+          "initialWidth": 304,
+          "initialHeight": 368,
+          "previewX": 192,
+          "previewY": 16,
+          "previewWidth": 272,
+          "previewHeight": 368
+        },
+        "uiData": {
+          "posX": 320,
+          "posY": 16,
+          "width": 176,
+          "selected": false
+        },
+        "propValues": {
+          "type": "get",
+          "hidePreview": false
+        },
+        "inputValues": {
+          "endpointUrl": "",
+          "payloadJson": ""
+        },
+        "incomingEdges": {
+          "endpointUrl": [
+            {
+              "sourceNodeId": "text_processor_lmbd9a",
+              "outputId": "text"
+            }
+          ]
+        }
+      },
+      {
+        "id": "text_processor_pvdu65",
+        "displayLabel": "Extract news content",
+        "nodeSpecId": "text_processor",
+        "customData": {
+          "initialWidth": 304,
+          "initialHeight": 288,
+          "previewX": 480,
+          "previewY": 16,
+          "previewWidth": 208,
+          "previewHeight": 368
+        },
+        "uiData": {
+          "posX": 544,
+          "posY": 16,
+          "width": 176,
+          "selected": false
+        },
+        "propValues": {
+          "mode": "mustache",
+          "separator": "\\n",
+          "formatString": "{{results.0.content}}",
+          "hidePreview": false
+        },
+        "inputValues": {
+          "texts": []
+        },
+        "incomingEdges": {
+          "texts": [
+            {
+              "sourceNodeId": "custom_api_3bw8p9",
+              "outputId": "responseJson"
+            }
+          ]
+        }
+      },
+      {
+        "id": "colab_text_to_text_3r6qhy",
+        "displayLabel": "News written by GPT2",
+        "nodeSpecId": "colab_text_to_text",
+        "customData": {
+          "previewX": 1040,
+          "previewY": 16,
+          "previewWidth": 320,
+          "previewHeight": 368
+        },
+        "uiData": {
+          "posX": 960,
+          "posY": 16,
+          "width": 176,
+          "selected": false
+        },
+        "propValues": {
+          "immediateMode": false,
+          "hidePreview": false
+        },
+        "inputValues": {
+          "text": ""
+        },
+        "incomingEdges": {
+          "text": [
+            {
+              "sourceNodeId": "text_selector_hbryoe",
+              "outputId": "selectedText"
+            }
+          ]
+        }
+      },
+      {
+        "id": "text_selector_hbryoe",
+        "displayLabel": "Select a sentence to feed GPT2",
+        "nodeSpecId": "text_selector",
+        "customData": {
+          "initialWidth": 304,
+          "initialHeight": 144,
+          "previewX": 704,
+          "previewY": 16,
+          "previewWidth": 320,
+          "previewHeight": 368
+        },
+        "uiData": {
+          "posX": 752,
+          "posY": 16,
+          "width": 176,
+          "selected": false
+        },
+        "propValues": {
+          "hidePreview": false
+        },
+        "inputValues": {
+          "text": ""
+        },
+        "incomingEdges": {
+          "text": [
+            {
+              "sourceNodeId": "text_processor_pvdu65",
+              "outputId": "text"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
